@@ -26,9 +26,6 @@ function fetchData() {
       console.log(error);
     });
 }
-
-fetchData();
-
 function getPost() {
   url = fetch("https://jsonplaceholder.typicode.com/posts?userId=1")
     .then((response) => response.json())
@@ -36,3 +33,5 @@ function getPost() {
 }
 
 getPost();
+
+fetchData();
